@@ -16,19 +16,18 @@ public class DetailActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail);
 
-        // View'ları doğru ID'lerle tanımlama
+        
         imageViewDrink = findViewById(R.id.imageViewDrink);
         textViewName = findViewById(R.id.textViewName);
         textViewDescription = findViewById(R.id.textViewDescription);
 
-        // Intent'ten gelen verileri alma
+        
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             String name = extras.getString("name");
             String description = extras.getString("description");
             int imageResource = extras.getInt("image");
 
-            // Verileri view'lara yerleştirme
             textViewName.setText(name);
             textViewDescription.setText(description);
             imageViewDrink.setImageResource(imageResource);
