@@ -16,7 +16,6 @@ public class Drink {
         this.imageResource = imageResource;
         this.description = description;
     }
-
     
     public int getId() {
         return id;
