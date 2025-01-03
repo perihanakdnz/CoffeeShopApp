@@ -17,7 +17,7 @@ public class Drink {
         this.description = description;
     }
 
-    // Getter ve Setter metodları
+    
     public int getId() {
         return id;
     }
