@@ -22,18 +22,18 @@ public class MainActivity2 extends AppCompatActivity {
 
         ListView lstv = findViewById(id.listview);
         
-        // Veritabanı örneğini al
+    
         db = AppDatabase.getInstance(this);
 
-        // İlk kez çalıştığında verileri ekle
+    
         if (db.drinkDao().getAllDrinks().isEmpty()) {
             insertInitialData();
         }
 
-        // Verileri veritabanından çek
+        
         List<Drink> drinkList = db.drinkDao().getAllDrinks();
 
-        // Verileri dizilere dönüştür
+        
         String[] ad = new String[drinkList.size()];
         int[] resim = new int[drinkList.size()];
 
